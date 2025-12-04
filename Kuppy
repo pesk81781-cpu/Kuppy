@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KUPPY — Drink Clean. Think Green.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --leaf-green:#4CAF50;
+      --forest-green:#2E7D32;
+      --soft-lime:#C5E1A5;
+      --off-white:#F5F5F5;
+      --charcoal:#333333;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial;line-height:1.5;margin:0;color:var(--charcoal);background:linear-gradient(180deg,var(--off-white),#ffffff)}
+    a{color:var(--leaf-green);text-decoration:none}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{background:transparent;padding:18px 0;}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo svg{width:46px;height:46px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    .cta{background:var(--leaf-green);color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-family:Poppins,Inter;font-size:36px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:#51665a}
+    .hero .buttons{display:flex;gap:12px}
+    .btn-outline{border:2px solid var(--leaf-green);padding:10px 14px;border-radius:8px;font-weight:600;background:white}
+
+    .product-card{background:linear-gradient(180deg,white, var(--off-white));border-radius:16px;box-shadow:0 6px 18px rgba(36,70,50,0.06);padding:18px}
+    .bottle-mock{width:100%;height:420px;background:linear-gradient(180deg,#eaf6ea,#fff);border-radius:12px;display:flex;align-items:center;justify-content:center;position:relative}
+    .bottle-placeholder{width:200px;height:360px;background:linear-gradient(180deg,#ffffff,#f2fff2);border-radius:28px;box-shadow:0 10px 24px rgba(46,125,50,0.08);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:18px}
+    .tear-band{position:absolute;top:48px;left:50%;transform:translateX(-50%);width:70%;height:78px;background:linear-gradient(90deg,var(--soft-lime),#e8f8e8);border-radius:6px;border:2px dashed rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;color:var(--forest-green);font-weight:700}
+    .pull-tab{position:absolute;top:36px;left:calc(50% + 34%);transform:translateX(-50%);width:40px;height:40px;background:var(--leaf-green);color:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* Sections */
+    section{padding:40px 0;border-top:1px solid rgba(0,0,0,0.03)}
+    h2{font-family:Poppins,Inter;margin:0 0 10px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{background:white;padding:18px;border-radius:12px}
+
+    .how-steps{display:flex;gap:12px;flex-wrap:wrap}
+    .step{flex:1;min-width:200px;background:white;padding:18px;border-radius:12px}
+
+    .partners{display:flex;flex-direction:column;gap:12px}
+    .partner-box{display:flex;justify-content:space-between;align-items:center;background:#ffffff;padding:14px;border-radius:10px}
+
+    /* FAQ */
+    .faq-item{background:white;padding:14px;border-radius:10px;margin-bottom:10px}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    form input,form textarea{width:100%;padding:12px;border:1px solid #e6efe6;border-radius:8px;margin-bottom:10px}
+    form button{background:var(--forest-green);color:white;padding:12px;border-radius:8px;border:0;font-weight:700}
+
+    footer{padding:32px 0;color:#3a4b3a}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.product-card{margin-top:18px}.container{padding:18px}.contact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <!-- Replace this inline SVG with your real logo (logo.png) -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="12" fill="#eaf6ea"/>
+          <path d="M20 38c6-8 16-8 22 0" stroke="#2E7D32" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <circle cx="32" cy="22" r="8" fill="#4CAF50"/>
+        </svg>
+        <div>
+          <div style="font-weight:700;color:var(--forest-green)">KUPPY</div>
+          <div style="font-size:12px;color:#6f856f">Drink Clean. Think Green.</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#why">Why KUPPY</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#ads">Advertise</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div><a class="cta" href="#contact">Partner With Us</a></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Drink Clean. Think Green.</h1>
+        <p>Introducing KUPPY — a fully biodegradable bottle with a tamper-proof peel-to-open ad band. Eco-friendly, modern and designed for brands.</p>
+        <div class="buttons">
+          <a class="cta" href="#products">Explore KUPPY</a>
+          <a class="btn-outline" href="#ads">Become a Partner</a>
+        </div>
+
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+          <div style="background:white;padding:12px;border-radius:10px;min-width:160px">100% Biodegradable</div>
+          <div style="background:white;padding:12px;border-radius:10px;min-width:160px">Tamper-proof Tear Band</div>
+          <div style="background:white;padding:12px;border-radius:10px;min-width:160px">30% Ad Band for Partners</div>
+        </div>
+      </div>
+
+      <div class="product-card" id="products">
+        <div class="bottle-mock" role="img" aria-label="KUPPY bottle mockup">
+          <div class="tear-band">Partner Ad • Tear to Open • Your Brand Here</div>
+          <div class="pull-tab">PULL</div>
+          <div class="bottle-placeholder">
+            <div style="font-weight:700;color:var(--forest-green);margin-bottom:8px">KUPPY</div>
+            <div style="font-size:12px;color:#6f856f;margin-bottom:6px">Bio-Bottle. Better Planet.</div>
+            <div style="font-size:11px;color:#8aa18a">70% permanent brand • 30% tear band</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <h2>Why Choose KUPPY?</h2>
+        <div class="grid-3">
+          <div class="feature">
+            <h3 style="margin-top:0">100% Biodegradable</h3>
+            <p>Our bottles are made from plant-based materials that naturally break down without harming the environment.</p>
+          </div>
+          <div class="feature">
+            <h3>Safe & Tamper-Proof</h3>
+            <p>The top 30% acts as a tear-to-open safety seal. Customers tear the ad strip to open the bottle — the main label remains intact.</p>
+          </div>
+          <div class="feature">
+            <h3>Partner-friendly Ads</h3>
+            <p>Sell the top band to brands — a high-impact, low-cost ad placement that reaches consumers at the moment of use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="how-steps">
+          <div class="step">
+            <h4 style="margin-top:0">Step 1 — Production</h4>
+            <p>We print a full-wrap label with a perforated top strip (30% height). The bottom 70% carries the permanent KUPPY branding.</p>
+          </div>
+          <div class="step">
+            <h4>Step 2 — Distribution</h4>
+            <p>Bottles reach retail, events and corporate partners with ads already printed on the tamper band.</p>
+          </div>
+          <div class="step">
+            <h4>Step 3 — Engagement</h4>
+            <p>Customers tear the ad band to open the bottle — high brand recall at the moment of consumption.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ads">
+      <div class="container">
+        <h2>Advertise With KUPPY</h2>
+        <p>Brands can book the top 30% tear-off band. We offer campaign packages, short-run promotions and event-specific printing.</p>
+        <div class="partners">
+          <div class="partner-box">
+            <div>
+              <strong>Starter Pack</strong>
+              <div style="font-size:13px;color:#51665a">Small run, local distribution</div>
+            </div>
+            <div><a href="#contact">Request Rates</a></div>
+          </div>
+
+          <div class="partner-box">
+            <div>
+              <strong>Event Pack</strong>
+              <div style="font-size:13px;color:#51665a">Perfect for launches & conferences</div>
+            </div>
+            <div><a href="#contact">Request Rates</a></div>
+          </div>
+
+          <div class="partner-box">
+            <div>
+              <strong>Brand Collab</strong>
+              <div style="font-size:13px;color:#51665a">Long-term advertising partnership</div>
+            </div>
+            <div><a href="#contact">Get in Touch</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About KUPPY</h2>
+        <p>KUPPY began with a simple idea: everyday products should not cost the earth. We create bottles that biodegrade naturally and give brands a new way to reach customers responsibly.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+          <strong>Is the bottle fully biodegradable?</strong>
+          <p>Yes. Materials used are plant-based and designed to break down correctly under composting conditions.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Can I customize design for my brand?</strong>
+          <p>Yes — we offer special runs and custom printing for large orders.</p>
+        </div>
+        <div class="faq-item">
+          <strong>How does the ad band work?</strong>
+          <p>The top 30% is printed as an ad band with a perforation. Consumers tear it off to open the bottle. The main KUPPY label remains on the bottle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Get in Touch</h2>
+          <p>Interested in selling ads, ordering bottles, or partnering? Use the form or contact us directly.</p>
+
+          <div style="margin-top:18px">
+            <strong>Email:</strong> <a href="mailto:contact@kuppy.com">contact@kuppy.com</a><br>
+            <strong>WhatsApp:</strong> +91 00000 00000 (replace with your number)<br>
+            <strong>Instagram:</strong> <a href="https://instagram.com/kuppy.official">@kuppy.official</a>
+          </div>
+        </div>
+
+        <div>
+          <form onsubmit="event.preventDefault();alert('Thanks! Your message was sent (demo). Replace the form handler with your email/CRM).');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Company / Brand (optional)">
+            <textarea rows="6" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>KUPPY</strong> — Drink Clean. Think Green.</div>
+        <div style="font-size:13px;color:#6f856f">Made with ♻️ for a greener tomorrow</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
